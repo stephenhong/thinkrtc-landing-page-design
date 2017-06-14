@@ -1,0 +1,483 @@
+<style>
+/*DESKTOP SIZE*/
+@media (min-width: 768px) {
+  .zoomdiv {
+    margin: 10px;
+    display: inline-block;
+    border: 0;
+    width: 30%;
+    height: 100%;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.35);
+  }
+  .site-header h1 {
+    font-family: 'Roboto', sans-serif;
+    /*font-weight: 700;*/
+    font-size: 40px;
+    line-height: 76px;
+    margin-bottom: 24px;
+    letter-spacing: 2px
+}
+
+p.lead {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.home-content h1 {
+    font-size: 44px;
+    color: white;
+    padding: 0 10px;
+    letter-spacing: 0px;
+    line-height: 28px;
+}
+.home-content h1 small {
+    font-size: 21px;
+    color: white;
+    display: block;
+    margin: 40px 0;
+}
+.section1-block-image{
+  width:100px;
+}
+#heading{
+  margin: 0px;
+  font-size: 25px;
+  /*border-bottom: 2px solid #495c70;*/
+  transition: border-color .3s ease-in-out;
+}
+}
+/*MOBILE SIZE*/
+@media (max-width: 767px) {
+  .zoomdiv {
+    margin: 10px;
+    display: inline-block;
+    border: 0;
+    width: 43%;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.35);
+  }
+  
+    .home-content h1 {
+  font-size: 22px;
+  color: white;
+  padding: 0 10px;
+}
+.home-content h1 small {
+    font-size: 11px;
+    color: white;
+    display: block;
+    margin: 10px 0;
+}
+.section-header span~h2, .section-header span~h3 {
+    margin-top: 12px;
+    font-size: 22px;
+    font-weight: 900;
+}
+p.lead {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.section1-block-image{
+  width:70px;
+}
+#heading{
+  margin: 0px;
+  font-size: 15px;
+  border-bottom: 2px solid #495c70;
+  transition: border-color .3s ease-in-out;
+}
+}
+
+
+</style><!--media-->
+<style>
+@media (min-width: 1300px) {
+  .videosize {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1299px) {
+  .videosize {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .videosize {
+    width: 100%;
+  }
+}
+</style>
+<style>
+  .feature-title {
+    font-size: 21px;
+    color:black;
+  }
+  .feature-description{
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  .feature-image{
+    position: absolute;
+    top: 136px;
+    right: -200px;
+    width: 66%;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="style.css">
+
+<!-- Site header -->
+<header class="site-header size-lg text-center" >
+  <div class="fullscreen-bg">
+    <video loop muted autoplay poster="<%= asset_path 'homepagebg.jpeg' %>" class="fullscreen-bg__video">
+      <source src="<%#= asset_path 'videobackground.mp4' %> " type="video/mp4"> 
+    </video>
+  </div>
+  <div class="home-content">
+    <h1 style="margin:0px"><b>Cloud Based Client Management Solution</b></h1><br> 
+    <span id="heading" style="margin:0px">A simple way to communicate, collaborate and manage your customers online.</span><br><br>
+    <div class="row-fields row">
+      <a href="/sign_up" class="signup_btn hvr-grow">14 Day Free Trial</a>
+      <p>No credit card required.</p>
+    </div>
+  </div>
+  <div class="home-video demo-video col-md-5 col-centered" align="center"> 
+    <!--<video loop muted autoplay class="videosize">-->
+    <!--  <source src="<%= asset_path 'admindashboardyoutube' %>" type="video/mp4">-->
+    <!--</video>-->
+    <div class="videosize">
+    <div class="wistia_responsive_padding" style="padding:55.0% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/hf0ueo9ups?videoFoam=true" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+    <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+    </div>
+  </div>
+</header>
+<!-- END Site header -->
+
+<!-- Main container -->
+<main>
+  
+  <!--Section 0  -->
+  <!--<section style="padding-top:100px;">-->
+  <!--  <div class="container" >-->
+      
+  <!--    <header class="text-center col-md-12" style="padding-bottom: 50px; color: #000">-->
+  <!--        <h2 style="font-weight:100; font-size: 23px">A Business & Client Facing Cloud-Based Software to Simplify your Management</h2>-->
+  <!--        <p>ThinkRTC lets you run a businesses efficiently and collaboratively with your clients. You and your clients have direct access to secure video conferencing to file storage, E-Signatures, appointments and more.</p>-->
+  <!--    </header>-->
+  <!--    <center><a class="a-link hvr-grow" href="/crm">Learn more</a></center>-->
+  <!--  </div>-->
+  <!--</section>-->
+  <!--<hr>-->
+  <!--Section 1-->
+  <section>
+    <div class="container">
+      <div class="col-sm-12 col-md-6">
+        <header class="section-header text-left">
+          <span>All in one place</span>
+          <h2>Manage your clients at scale</h2>
+          <img class="center-block mobview" src="<%= asset_path 'manage' %>" alt="how it works">
+        </header>
+      
+        <p class="lead">Operating quickly and efficiently is easy when everything’s accessible in one location. We help you manage the right way: structure workflows with dynamic tasks, assign CoWorkers to clients, schedule meetings, and share documents with your clients. Even communicate using video conferencing and more! </p>
+        <br>
+        <center>
+          <a class="a-link hvr-grow" href="/crm">Learn more</a>
+        </center>
+      </div>
+
+      <div class="col-sm-12 col-md-6 hidden-xs hidden-sm c">
+        <br>
+        <img class="center-block" src="https://static.vecteezy.com/system/resources/previews/000/133/512/non_2x/management-vector-icons.jpg" alt="how it works">
+        
+          <!--<center><script src="https://fast.wistia.com/embed/medias/p45j7sb98c.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_p45j7sb98c popover=true popoverContent=link" style="display:inline"><a style=" font-size:25px" href="#"> </a><i class="fa fa-2x fa-play-circle" aria-hidden="true" style="color:#7b7b7b; cursor:pointer"> Watch</i></span></center>-->
+      </div>
+
+    </div>
+  </section>
+
+  <!--Section 2-->
+  <section>
+    <div class="container">
+      <div class="col-sm-12 col-md-6 hidden-xs hidden-sm">
+        <br>
+        <img class="center-block" src="https://cdn03.boxcdn.net/sites/default/files/styles/module_31_mobile_x1/public/2016-05/Illustration_sync_1.png?itok=gc-FzrqV" alt="how it works">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <header class="section-header text-left">
+          <span>Client Facing</span>
+          <h2>Client Collaboration Made Easy</h2>
+          <img class="center-block mobview" src="https://cdn03.boxcdn.net/sites/default/files/styles/module_31_mobile_x1/public/2016-05/Illustration_sync_1.png?itok=gc-FzrqV" alt="how it works">
+        </header>
+
+        <p class="lead">Each time you add a new client, your client will automatically be given a secure access to their own dashboard where they can see all their shared files, updates, tasks, billing, and even communicate usign video conference with your business.</p>
+        <!--<p class="lead"><b>CoBrowse Instantly</b> to provide better support. A new technology that lets you control your customers browser. Instantly help your customers fill out important document, signup, or demo your product.</p>-->
+      
+        <br>
+        <center><a class="a-link hvr-grow" href="/videosharing">Learn more</a></center>
+      </div>
+    </div>
+  </section>
+
+  <!--Section 3-->
+  <section>
+    <div class="container">
+
+      <div class="col-sm-12 col-md-6">
+        <header class="section-header text-left">
+          <span>SECURITY</span>
+          <h2>Enterprise Grade Security</h2>
+          <img class="center-block mobview" src="<%= asset_path 'safe' %>" alt="how it works">
+        </header>
+
+        <p class="lead"><b>Encryption</b> in the highest standards. We use industry standard security technologies such as HTTPS support, RTP, and HTTP authentication with secure WebSockets and application level authentication with the use of tokens.</p>
+        <p class="lead"><b>Anonymized</b> user data. We do not collect any user data such as login information, IP, or identities. ThinkRTC is laos Safe Harbour certified, meaning that we've gone through strict requirments in security.</p>
+        <br>
+        <center><a class="a-link hvr-grow" href="/security">Learn more</a></center>
+      </div>
+
+      <div class="col-sm-12 col-md-6 hidden-xs hidden-sm">
+        <br>
+        <img class="center-block" src="<%= asset_path 'safe' %>" alt="how it works">
+      </div>
+
+    </div>
+  </section>
+  
+  <!--Section 4-->
+  <section>
+    <div class="container">
+      <div class="col-sm-12 col-md-6 hidden-xs hidden-sm">
+        <br>
+        <img class="center-block" src="<%= asset_path 'paperplane' %>" alt="how it works">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <header class="section-header text-left">
+          <span>COMMUNICATION</span>
+          <h2>Cloud Based Communication</h2>
+          <img class="center-block mobview" src="<%= asset_path 'paperplane' %>" alt="how it works">
+        </header>
+
+        <p class="lead">Communicate with clients using live video conferencing with screensharing to securely conduct meetings. Leverage our many integrations to faster manage clients efficiently and Increase your organization’s productivity by leveraging persistent 1-1 or group chat with integrated drag-and-drop document sharing and screen sharing.</p>
+        <!--<p class="lead"><b>CoBrowse Instantly</b> to provide better support. A new technology that lets you control your customers browser. Instantly help your customers fill out important document, signup, or demo your product.</p>-->
+      
+        <br>
+        <center><a class="a-link hvr-grow" href="/videosharing">Learn more</a></center>
+      </div>
+    </div>
+  </section>
+  
+  <!--Section 3-->
+  <section style="background-color: #eff1f2;">
+    <div class="container">
+
+      <div class="col-sm-12 col-md-6">
+        <header class="section-header text-left">
+          <span>FEATURES</span>
+          <h2>Make your business efficient</h2>
+          <img class="center-block mobview" src="<%= asset_path 'featurelist'%>" style="box-shadow: 0px 1px 20px 8px rgba(125, 123, 123, 0.6);" alt="features">
+        </header>
+
+        <div class="feature-part" style="margin-bottom: 1.875rem">
+          <div class="col-md-2" style="margin-bottom: .46875rem;">
+            <img src="https://image.flaticon.com/icons/svg/131/131126.svg" style="width:50px; height:50px">
+          </div>
+          <div class="col-md-10">
+            <div class="feature-title">
+              Client & Business Facing 
+            </div>
+            <div class="feature-description" style="margin-bottom: 40px;">
+              <p>Our Client Facing solution makes it easy to keep your client up to date with everything.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-part" style="margin-bottom: 1.875rem">
+          <div class="col-md-2" style="margin-bottom: .46875rem;">
+            <img src="https://image.flaticon.com/icons/svg/131/131176.svg" style="width:50px; height:50px">
+          </div>
+          <div class="col-md-10">
+            <div class="feature-title">
+              E-Signatures 
+            </div>
+            <div class="feature-description" style="margin-bottom: 40px;">
+              <p>Cut time by up to 93% with e-signatures that fit right into your workday. Built in and easy to use.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-part" style="margin-bottom: 1.875rem">
+          <div class="col-md-2" style="margin-bottom: .46875rem;">
+            <img src="https://image.flaticon.com/icons/svg/131/131185.svg" style="width:50px; height:50px">
+          </div>
+          <div class="col-md-10">
+            <div class="feature-title">
+              File sharing
+            </div>
+            <div class="feature-description" style="margin-bottom: 40px;">
+              <p>Store and share any files on the cloud specifically for each client. Secured, organized and automated.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-part" style="margin-bottom: 1.875rem">
+          <div class="col-md-2" style="margin-bottom: .46875rem;">
+            <img src="https://image.flaticon.com/icons/svg/131/131018.svg" style="width:50px; height:50px">
+          </div>
+          <div class="col-md-10">
+            <div class="feature-title">
+              Video Conferencing
+            </div>
+            <div class="feature-description" style="margin-bottom: 40px;">
+              <p>Instantly have meetings online with screen sharing and video conferencing.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-part" style="margin-bottom: 1.875rem">
+          <div class="col-md-2" style="margin-bottom: .46875rem;">
+            <img src="https://image.flaticon.com/icons/svg/131/131182.svg" style="width:50px; height:50px">
+          </div>
+          <div class="col-md-10">
+            <div class="feature-title">
+              High Security & HIPAA Complient
+            </div>
+            <div class="feature-description" style="margin-bottom: 40px;">
+              <p>100% HIPAA compliant, so have your client sign away and view documents in realtime!</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <center><a class="a-link hvr-grow" href="/crm">Learn more</a></center>
+      </div>
+
+      <div class="col-sm-12 col-md-6 hidden-xs hidden-sm" style="position: absolute;right: -10px;">
+        <img class="center-block" src="<%= asset_path 'featurelist'%>" style="box-shadow: 0px 1px 20px 8px rgba(125, 123, 123, 0.6);" alt="features">
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- Banner -->
+  <section id="banner" class="section-sm" style="padding-top:150px; padding-bottom:150px">
+    <center>
+      <div class="container"><h3>Try our cloud based management software.<br><div class="mob view"><br></div>Schedule a demo with us!</h3>
+        <div style="margin-top:50px">
+          <a href="https://calendly.com/jonn-thinkrtc/15min" rel="stylesheet" class="signup_btn hvr-grow" style="background-color: #fff; color: #000">SCHEDULE A DEMO</a>
+          
+          <p><strong>See if we are the right fit.</strong></p>
+        </div>
+      </div>
+    </center>
+  </section>
+
+</main>
+<!-- END Main container -->
+
+<%= render 'layouts/footer' %> 
+
+
+<!-- Mixpanel track point -->
+<script>mixpanel.track("Viewed Landing Page");</script> 
+  
+<!-- Google Analytics for UTM paratemers -->   
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-89599218-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+<!--Optimizely -->
+<!--<script src="https://cdn.optimizely.com/js/8286671603.js"></script>-->
+
+<!--<script>-->
+<!--var headings = ['Business Meetings Made Easy', 'Schedule Video Meetings',  'Customer Meetings Made Easy'];-->
+<!--var i = 0;-->
+<!--var intervalId = setInterval(function() {-->
+<!--  document.getElementById('heading').innerHTML = headings[i];-->
+<!--  if (i == (headings.length - 1)) {-->
+<!--    i = 0;-->
+    //you can even clear interval here to make heading stay as last one in array
+    //cleanInterval(intervalId);
+
+<!--  } else {-->
+<!--    i++;-->
+<!--  }-->
+<!--}, 2000)-->
+<!--</script>-->
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '673199646222420'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=673199646222420&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+<!-- Hotjar Tracking Code for https://thinkrtc.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:501763,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+<script type="text/javascript">
+  (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script");r.type="text/javascript";
+  r.async=true;r.src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-3.4.0-min.gz.js";
+  r.onload=function(){e.amplitude.runQueuedFunctions()};var i=t.getElementsByTagName("script")[0];
+  i.parentNode.insertBefore(r,i);function s(e,t){e.prototype[t]=function(){this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+  return this}}var o=function(){this._q=[];return this};var a=["add","append","clearAll","prepend","set","setOnce","unset"];
+  for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[];return this;
+  };var p=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"];
+  for(var l=0;l<p.length;l++){s(c,p[l])}n.Revenue=c;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp","logEventWithGroups"];
+  function v(e){function t(t){e[t]=function(){e._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+  }}for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){e=(!e||e.length===0?"$default_instance":e).toLowerCase();
+  if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]};e.amplitude=n;
+  })(window,document);
+
+  amplitude.getInstance().init("eacc83a079432439ee3ff6ceaca9db65");
+</script>
+
+<script>amplitude.getInstance().logEvent('Viewed_landing_page');</script>
